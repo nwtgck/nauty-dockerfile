@@ -12,4 +12,6 @@ RUN wget http://pallini.di.uniroma1.it/$NAUTY.tar.gz && \
 # Build
 WORKDIR $NAUTY
 RUN ./configure && \
-    make
+    make && \
+    # Create symbolic links to use as commands
+    ls | xargs file | grep "ELF 64-bit LSB executable" | awk '{sub(":", ""); print $1}' | xargs -I {} ln -s $PWD/{}  /usr/local/bin/{}
