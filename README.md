@@ -1,4 +1,4 @@
-# nauty-dockerfile
+# docker-nauty
 [![Docker Automated build](https://img.shields.io/docker/automated/nwtgck/nauty.svg)](https://hub.docker.com/r/nwtgck/nauty/) [![](https://images.microbadger.com/badges/image/nwtgck/nauty.svg)](https://microbadger.com/images/nwtgck/nauty "Get your own image badge on microbadger.com")
 
 Docker image for [nauty and Traces](http://pallini.di.uniroma1.it/)
