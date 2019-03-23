@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: Build Docker Image
+          command: docker build -t nauty .
+      # Check whether a working-test is successful or not
+      - run:
+          name: Working test
+          command: |
+            docker run --rm -i nauty /bin/bash << EOF
+            set -xeu
+            geng 6 -d2 -D4 | showg
+            EOF
