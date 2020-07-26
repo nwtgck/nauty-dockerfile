@@ -1,4 +1,4 @@
-FROM gcc:9.1.0
+FROM gcc:10.2.0
 
 LABEL maintainer="Ryo Ota <nwtgck@gmail.com>"
 
