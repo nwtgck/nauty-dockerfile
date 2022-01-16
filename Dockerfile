@@ -1,6 +1,6 @@
 FROM gcc:9.1.0
 
-LABEL maintainer="Ryo Ota <nwtgck@gmail.com>"
+LABEL maintainer="Ryo Ota <nwtgck@nwtgck.org>"
 
 ENV NAUTY nauty26r10
 
